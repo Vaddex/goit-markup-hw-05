@@ -9,6 +9,7 @@
   --portfolio-frst-btn-color: #e7e9fc;
   --customers-link-color: #8e8f99;
   --ocean: #404bbf;
+  --modal-label-color: #8e8f99;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -569,6 +570,7 @@ ol {
 .input-email {
   width: 264px;
   height: 40px;
+  border-radius: 4px;
   border: 1px solid #ffffff;
   background-color: transparent;
   font-size: 12px;
@@ -595,6 +597,9 @@ ol {
   border: none;
   border-radius: 4px;
 }
+.interactive-btn-icon {
+  margin-left: 16px;
+}
 
 /* modal window */
 .modal-container {
@@ -613,6 +618,8 @@ ol {
   pointer-events: none;
 }
 .modal-box {
+  padding: 72px 24px 24px 24px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -650,4 +657,27 @@ ol {
 }
 .modal-icon-anim {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-link-color);
+  margin-bottom: 16px;
+}
+.modal-form {
+  margin-bottom: 8px;
+}
+.modal-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--modal-label-color);
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-input {
+  position: relative;
 }
