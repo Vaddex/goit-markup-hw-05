@@ -695,6 +695,7 @@ ol {
 
 .modal-input-text:focus {
   border-color: #4d5ae5;
+  fill: #4d5ae5;
 }
 .modal-input-text:focus + .input-name {
   fill: var(--primary-brand-color);
