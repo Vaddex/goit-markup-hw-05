@@ -686,6 +686,7 @@ ol {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  color: var(--primary-link-color);
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
@@ -694,6 +695,9 @@ ol {
 
 .modal-input-text:focus {
   border-color: #4d5ae5;
+}
+.modal-input-text:focus + .input-name {
+  fill: var(--primary-brand-color);
 }
 .input-name {
   position: absolute;
@@ -731,7 +735,7 @@ ol {
 }
 .checkbox {
 }
-.check-box-style {
+.checkbox-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -751,12 +755,13 @@ ol {
   fill: transparent;
   cursor: pointer;
 }
-.check-box-style:checked + .check-box-style .checkbox-label-span {
+.checkbox:checked + .checkbox-text .checkbox-label-span {
   background-color: var(--ocean);
   fill: var(--bg-btn-color);
   border: none;
 }
-.check-box-style:focus + .check-box-style .checkbox-label-span {
+
+.checkbox:focus + .checkbox-text .checkbox-label-span {
   border-color: var(--ocean);
 }
 .checkbox-a {
