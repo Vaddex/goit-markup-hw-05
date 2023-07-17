@@ -705,7 +705,7 @@ ol {
 .input-name:focus {
   fill: #4d5ae5;
 }
-.modal-text-area {
+.modal-text-style {
   margin-bottom: 16px;
 }
 .modal-text-area {
@@ -723,11 +723,13 @@ ol {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-text-area {
+.modal-text-area:focus {
   border-color: #4d5ae5;
 }
 .modal-checkbox {
   margin-bottom: 24px;
+}
+.checkbox {
 }
 .check-box-style {
   font-size: 12px;
@@ -747,6 +749,41 @@ ol {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  cursor: pointer;
+}
+.check-box-style:checked + .check-box-style .checkbox-label-span {
+  background-color: var(--ocean);
+  fill: var(--bg-btn-color);
+  border: none;
+}
+.check-box-style:focus + .check-box-style .checkbox-label-span {
+  border-color: var(--ocean);
+}
+.checkbox-a {
+  color: var(--logo-color);
+}
+.form-send-btn {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-send-btn:hover,
+.form-send-btn:focus {
+  background-color: var(--primary-brand-color);
 }
 .custom-chek {
 }
